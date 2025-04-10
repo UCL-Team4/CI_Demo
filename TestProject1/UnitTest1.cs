@@ -26,7 +26,7 @@
                 var result3 = calculator.Add(-2, 3); // This should return 1
 
                 //Assert
-                Assert.Equal(566, result);
+                Assert.Equal(5, result);
                 Assert.Equal(0, result2); // Check addition with zero
                 Assert.Equal(1, result3); // Check addition with negative number
             }
