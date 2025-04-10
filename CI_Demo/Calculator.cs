@@ -28,5 +28,16 @@ namespace CI_Demo
             if (b == 0) throw new DivideByZeroException();
             return (double)a / b;
         }
+
+        public double Power(double a, double b)
+        {
+        return Math.Pow(a, b);
+
+        }
+
+        public double SquareRoot(double a)
+        { 
+            return Math.Sqrt(a); 
+        }
     }
 }

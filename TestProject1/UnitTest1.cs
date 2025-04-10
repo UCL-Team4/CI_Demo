@@ -67,6 +67,29 @@
                 Assert.Equal(5, result);
                 Assert.Throws<DivideByZeroException>(() => calculator.Divide(10, 0));
             }
+
+
+            [Fact]
+            public void TestPowerWithNegativeDoubles()
+            {
+                //Arrange
+                //Act
+                var result = calculator.Power(-10, -2);
+                //Assert
+                Assert.Equal(0.01d, result);
+
+            }
+
+            [Fact]
+            public void TestSquareRootOf100()
+
+            {
+                //Arrange
+                //Act
+                var result = calculator.SquareRoot(100);
+                //Assert
+                Assert.Equal(10, result);
+            }
         }
     }
 }
